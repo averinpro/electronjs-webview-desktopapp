@@ -2,6 +2,8 @@
 
 ## Quick start
 
+> Make sure you have the latest Nodejs & Electron installed on your machine
+
 ```
 git clone https://github.com/dannysimfukwe/electronjs-webview-desktopapp.git
 
