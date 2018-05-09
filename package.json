@@ -1,0 +1,41 @@
+{
+  "name": "MegamaticAds",
+  "version": "1.0.0",
+  "url": "http://www.megamaticads.com",
+  "description": "Megamatic Ads Ads",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Danny Simfukwe",
+    "email": "dannysimfukwe@gmail.com"
+  },
+  "homepage": "http://www.megamaticads.com",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-builder": "^5.20.0",
+    "electron-packager": "^7.3.0",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "build": {
+    "appId": "megamaticads.desktop.app",
+    "app-category-type": "megamaticads.app.category.productivity",
+    "win": {
+      "iconUrl": "https://megamaticads.com/front-end/images/logo.png"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Marketing",
+    "Ads"
+  ],
+  "dependencies": {
+    "electron": "^2.0.0"
+  }
+}

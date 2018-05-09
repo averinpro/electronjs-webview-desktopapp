@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Megamatic Ads</title>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/app.css"> 
+</head>
+<body>
+  <div id="controls">
+    <button id="back" title="Go Back" disabled="true">&#9664;</button>
+    <button id="forward" title="Go Forward" disabled="true">&#9654;</button>
+    <button id="home" title="Go Home">&#8962;</button>
+    <button id="reload" title="Reload">&#10227;</button>
+  </div>
+
+  <div id="zoom-box">
+    <form id="zoom-form">
+      <input id="zoom-text" type="text">
+      <input type="submit" value="&#128270;">
+      <button id="zoom-in">&#10133;</button>
+      <button id="zoom-out">&#10134;</button>
+    </form>
+  </div>
+
+  <div id="find-box">
+    <form id="find-form">
+      <input id="find-text" type="text">
+      <div id="find-results"></div>
+      <input type="submit" style="position:absolute; visibility:hidden">
+      <button id="match-case">aA</button>
+      <button id="find-backward">&#60;</button>
+      <button id="find-forward">&#62;</button>
+    </form>
+  </div>
+
+  <webview src="https://www.megamaticads.com" style="width:640px; height:480px" allowpopups></webview>
+
+  <div id="sad-webview">
+    <div id="sad-webview-icon">&#9762;</div>
+    <h2 id="crashed-label">Aw, Snap!</h2>
+    <ente<h2 id="killed-label">Something went wrong</h2>
+    <p>Something went wrong fetching data</p>
+  </div>
+
+  <script type="text/javascript">
+    if (!navigator.onLine) {
+
+      `
+    <center><h2 id="killed-label">No internet Connection Detected!</h2>
+    <p>Please contact <a href="fb.com/dee.dush">Danny (dannysimfukwe@gmail.com) </a> for help</p></center>
+
+      `
+    }
+ </script>
+ 
+</body>
+</html>
+
+
